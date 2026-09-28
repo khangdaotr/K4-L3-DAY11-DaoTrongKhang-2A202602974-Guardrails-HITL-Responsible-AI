@@ -2,16 +2,16 @@
 
 > File này **tự sinh** bởi `scripts/grade.py`. **Không** viết / sửa tay.
 
-- Generated (UTC): `2026-09-28T07:04:52.968781+00:00`
+- Generated (UTC): `2026-09-28T07:16:07.997036+00:00`
 - Framework: `google-adk`
-- Technical failure: **True**
+- Technical failure: **False**
 
 ## Packaging
 
 | File | Status |
 |------|--------|
 | results.json | OK |
-| attack_results.json | MISSING |
+| attack_results.json | OK |
 | audit_log.json | OK |
 | metrics.json | OK |
 
@@ -29,9 +29,9 @@
 
 ## Red Team snapshot (từ `attack_results.json`)
 
-- Provider / model: `None` / `None`
-- Unsafe leaks (Red): `None/None`
-- Guards leaks (Red Advance): `None/None`
+- Provider / model: `gemini` / `gemini-3.5-flash`
+- Unsafe leaks (Red): `4/5`
+- Guards leaks (Red Advance): `0/5`
 
 ## Public tests
 
@@ -40,7 +40,13 @@
 
 ```text
 ..........                                                               [100%]
-10 passed in 1.63s
+============================== warnings summary ===============================
+.venv\Lib\site-packages\_pytest\cacheprovider.py:469
+  D:\LApAI\K4-L3-DAY11-DaoTrongKhang-2A202602974-Guardrails-HITL-Responsible-AI\.venv\Lib\site-packages\_pytest\cacheprovider.py:469: PytestCacheWarning: could not create cache path D:\LApAI\K4-L3-DAY11-DaoTrongKhang-2A202602974-Guardrails-HITL-Responsible-AI\.pytest_cache\v\cache\nodeids: [WinError 5] Access is denied: 'D:\\LApAI\\K4-L3-DAY11-DaoTrongKhang-2A202602974-Guardrails-HITL-Responsible-AI\\.pytest_cache\\v\\cache'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 1 warning in 1.31s
 ```
 
 ## Notes
